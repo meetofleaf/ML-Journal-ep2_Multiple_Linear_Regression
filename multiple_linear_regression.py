@@ -6,19 +6,22 @@ import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 
+from sklearn.compose import ColumnTransformer
+from sklearn.preprocessing import OneHotEncoder
+
 # Import Dataset
-dataset = pd.read_csv('<file_path>')    # Replace <file_path> with the file path of the dataset within the quotes.
+dataset = pd.read_csv('50_Startups.csv')    # Replace <file_path> with the file path of the dataset within the quotes.
 
-
-# Calculating study time per course for each student. This can also be used as independent variable.
-#dataset['study_time_per_course'] = dataset['time_study'] / dataset['number_courses']
-
-# Columns in order after adding the new variable/column: number_courses, time_study, Marks, study_time_per_course
 
 # Extracting independent (X) and dependent (y) columns/fields/variables. You can experiment with different independent variables.
-X = dataset.iloc[:,1:2].values   # time_study
-y = dataset.iloc[:,2].values    # Marks
+X = dataset.iloc[:,:-1].values      # Independent variables (R&D, Admin, Marketing, State)
+y = dataset.iloc[:,-1].values       # Dependent variable (profit)
 # Reference for iloc: https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.iloc.html
+
+
+# Encode categorical variable (state) into dummy variables (in the form of 1s & 0s) so that it can be used in mathematical formula of regression.
+ct = ColumnTransformer(transformers=[('encoder',OneHotEncoder(),[3])], remainder='passthrough')
+X = np.array(ct.fit_transform(X))
 
 
 # Splitting the dataset into training and test set
@@ -32,34 +35,26 @@ regressor.fit(X_train, y_train)     # Train the model on training data of both i
                                     # fit the model on the training data, hence function name 'fit'
 
 
-# Predicting the dependent values using the test set of independent data
+# Function to predict profit based on input using our trained model (regressor)
 y_pred = regressor.predict(X_test)
 # Simply, after learning from training data, the model tries to predict the dependent data (y_pred) from independent data (X_test)
 
-### You're done with the Machine Learning part, now let's visualize our results
-
-# Visualizing Training set results
-plt.scatter(X_train, y_train, color = 'red')
-plt.plot(X_train, regressor.predict(X_train), color = 'blue')
-plt.title('Marks vs Study time per Course')
-plt.xlabel('Study time per Course')
-plt.ylabel('Marks')
-plt.show()
-
-# Visualizing Test set results
-plt.scatter(X_test, y_test, color = 'red')
-plt.plot(X_train, regressor.predict(X_train), color = 'blue')
-plt.title('Marks vs Study time per Course')
-plt.xlabel('Study time per Course')
-plt.ylabel('Marks')
-plt.show()
+np.set_printoptions(precision=2)
+print(np.concatenate((y_pred.reshape(len(y_pred),1), y_test.reshape(len(y_test),1)),axis=1))
 
 
-# Function to predict marks based on input using previously trained model (regressor)
-def predictor(input_value):
-    return regressor.predict([[input_value]])
+### If you were able to run till here successfully, then machine learning part is complete.
+# Now, we can't visualize the data as we 1 dimension per variable,
+# we have 5 variables so it's not possible to visualize and perceive 5 dimensional charts so we just utilize the predict output above to compare actual and predicted values.
 
-print(predictor(3)) # Based on the independent data that you've set, change the input value from 3 (default) to any value you like.
-                    # For eg. if you chose to use study time (time_study) as independent variable, then you could enter any reasonable time in hours (1.5, 5, 7 etc.)
 
-# Dummy var, dummy var trap
+"""
+Dummy var, dummy var trap
+Feature selection for multiple regression:
+    - all-in
+    - backward elimination [select significance level, get p-value and eliminate highest one]
+    - forward elimination [select significance level, add lowest p-value and repeat for each variable]
+    - bidirection elimination []
+    - Score Comparison
+
+"""
