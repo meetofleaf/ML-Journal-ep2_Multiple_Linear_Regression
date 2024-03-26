@@ -44,19 +44,6 @@ y_pred = regressor.predict(X_test)
 np.set_printoptions(precision=2)
 print(np.concatenate((y_pred.reshape(len(y_pred),1), y_test.reshape(len(y_test),1)),axis=1))
 
-
 ### If you were able to run till here successfully, then machine learning part is complete.
 # Now, we can't visualize the data as we 1 dimension per variable,
 # we have 5 variables so it's not possible to visualize and perceive 5 dimensional charts so we just utilize the predict output above to compare actual and predicted values.
-
-
-"""
-Dummy var, dummy var trap
-Feature selection for multiple regression:
-    - all-in
-    - backward elimination [select significance level, get p-value and eliminate highest one]
-    - forward elimination [select significance level, add lowest p-value and repeat for each variable]
-    - bidirection elimination []
-    - Score Comparison
-
-"""
