@@ -23,16 +23,18 @@ y = dataset.iloc[:,-1].values       # Dependent variable (profit)
 ct = ColumnTransformer(transformers=[('encoder',OneHotEncoder(),[3])], remainder='passthrough')
 X = np.array(ct.fit_transform(X))
 
+# There is a precaution that usually needs to be taken to avoid something called dummy variable trap.
+# Luckily, our class and methods from sklearn automatically takes care of it. Visit the link to learn more: https://www.learndatasci.com/glossary/dummy-variable-trap/
+# To know more about dummy variables or one hot encoding visit: https://www.shiksha.com/online-courses/articles/handling-categorical-variables-with-one-hot-encoding/
+
 
 # Splitting the dataset into training and test set
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.25, random_state = 0)
 
 
 # Training the Linear Regression model (named regressor here) on the training set
-regressor = LinearRegression()      # Define regressor as linear regression model
-regressor.fit(X_train, y_train)     # Train the model on training data of both independent and dependent data OR
-                                    # you could simply say, teaching the model using the training data OR
-                                    # fit the model on the training data, hence function name 'fit'
+regressor = LinearRegression()      # Define regressor as regression instance. The linear regression class works for multiple regression as well.
+regressor.fit(X_train, y_train)     # Train the model on training data of both independent and dependent data.
 
 
 # Function to predict profit based on input using our trained model (regressor)
