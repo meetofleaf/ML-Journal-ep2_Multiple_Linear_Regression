@@ -17,18 +17,18 @@ Covering all feature selection methods is out of scope of this repository. So, t
 
 ## Data
 This repository includes the dataset (50_Startups.csv) suitable for mutliple linear regression.
-The dataset contains 5 variables and 50 instances and was uploaded by [Farhan](https://www.kaggle.com/farhanmd29) on [Kaggle](https://www.kaggle.com/). 
+The dataset contains 5 variables and 50 instances and was uploaded by [Farhan](https://www.kaggle.com/farhanmd29) on [Kaggle](https://www.kaggle.com/).
 
 Dataset link: https://www.kaggle.com/datasets/farhanmd29/50-startups
 
 Data dictionary:
-| Variable Name  | Data type    | Variable Type | Sample     |
-|:---------------|:-------------|:--------------|-----------:|
-|R&D Spend       |Continuous    |Independent    |_165349.2_  |
-|Administration  |Continuous    |Independent    |_136897.8_  |
-|Marketing Spend |Continuous    |Independent    |_471784.1_  |
-|State           |Categorical   |Independent    |_New York_  |
-|Profit          |Continuous    |Dependent      |_192261.83_ |
+|Variable Name   |Data type |Variable type  |Variable role  |Sample      |
+|:---------------|:---------|:--------------|:--------------|-----------:|
+|R&D Spend       |float     |Continuous     |Independent    |_165349.2_  |
+|Administration  |float     |Continuous     |Independent    |_136897.8_  |
+|Marketing Spend |float     |Continuous     |Independent    |_471784.1_  |
+|State           |str       |Categorical    |Independent    |_New York_  |
+|Profit          |float     |Continuous     |Dependent      |_192261.83_ |
 
 
 ## Code
