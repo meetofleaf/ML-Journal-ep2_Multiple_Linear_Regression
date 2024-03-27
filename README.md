@@ -21,14 +21,14 @@ The dataset contains 5 variables and 50 instances, uploaded by [Farhan](https://
 
 Dataset link: https://www.kaggle.com/datasets/farhanmd29/50-startups
 
-Independent Variables: 4
-- R&D Spend   (Continuous)
-- Administration  (Continuous)
-- Marketing Spend (Continuous)
-- State   (Categorical)
-
-Dependent Variables: 1
-- Profit  (Continuous)
+Data dictionary:
+| Variable Name  | Data type    | Variable Type | Sample     |
+|:---------------|:-------------|:--------------|-----------:|
+|R&D Spend       |Continuous    |Independent    |_165349.2_  |
+|Administration  |Continuous    |Independent    |_136897.8_  |
+|Marketing Spend |Continuous    |Independent    |_471784.1_  |
+|State           |Categorical   |Independent    |_New York_  |
+|Profit          |Continuous    |Dependent      |_192261.83_ |
 
 
 ## Code
