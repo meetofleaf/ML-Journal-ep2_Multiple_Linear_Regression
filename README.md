@@ -9,7 +9,9 @@ In this series of repositories, we'll explore various models, documenting the co
 
 # Ep-2 - Multiple Linear Regression
 This repository is the second addition to the 'ML Journal' series aimed at revisiting fundamental machine learning models. This specific repository focuses on Multiple Linear Regression, a widely used technique for modeling linear relationships between multiple features and a dependent/target variable.
+
 Compared to the previous linear regression model, we have multiple independent variables and sometimes it is necessary to select the best variables to get the most optimal and accurate model. This process of selection is called feature selection. There are variety of feature selection methods but for the purpose of multiple regression, stepwise selection is the most common method. Our ML library, sklearn, uses backward elimination method which is a type of stepwise feature selection method and it does so automatically but if you want to learn more about stepwise feature selection visit [Dataaspirant](https://dataaspirant.com/stepwise-regression/).
+
 Covering all feature selection methods is out of scope of this repository. So, to learn more about feature selection from a broader perspective, visit [neptune.ai](https://neptune.ai/blog/feature-selection-methods).
 
 
