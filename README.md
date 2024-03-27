@@ -17,7 +17,7 @@ Covering all feature selection methods is out of scope of this repository. So, t
 
 ## Data
 This repository includes the dataset (50_Startups.csv) suitable for mutliple linear regression.
-The dataset contains 5 variables and 50 instances, uploaded by [Farhan](https://www.kaggle.com/farhanmd29).
+The dataset contains 5 variables and 50 instances and was uploaded by [Farhan](https://www.kaggle.com/farhanmd29) on [Kaggle](https://www.kaggle.com/). 
 
 Dataset link: https://www.kaggle.com/datasets/farhanmd29/50-startups
 
