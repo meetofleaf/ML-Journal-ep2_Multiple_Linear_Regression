@@ -38,10 +38,10 @@ The Python code file (multiple_linear_regression.py) demonstrates how to impleme
 ## Requirements
 Following is a list of the programs and libraries, with the versions, used in the code:
 
-- Python==3.12.1
-  - pandas==2.2.0
-  - numpy==1.26.3
-  - scikit-learn==1.4.1
+- `Python==3.12.1`
+  - `pandas==2.2.0`
+  - `numpy==1.26.3`
+  - `scikit-learn==1.4.1`
 
 
 ## Code Specific Reference Links:
@@ -54,7 +54,9 @@ Following is a list of the programs and libraries, with the versions, used in th
 ## Getting Started
 - Clone this repository.
 - Ensure you have all the required programs and libraries installed or install using the requirements file.
+  - `pip install -r requirements.txt`
 - Simply run the Python script either from your OS' command prompt or from your choice of IDE.
+  - `py linear_regression.py`
 - Follow the comments and code execution to understand the process.
 - I encourage you to experiment with the code, modify the data, and play around with the model!
 - Lastly, feel free to share any suggestions, corrections, ideas or questions you might have.
