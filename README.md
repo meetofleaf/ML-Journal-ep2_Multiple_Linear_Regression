@@ -22,13 +22,13 @@ The dataset contains 5 variables and 50 instances, uploaded by [Farhan](https://
 Dataset link: https://www.kaggle.com/datasets/farhanmd29/50-startups
 
 Independent Variables: 4
-- _R&D Spend_
-- _Administration_
-- _Marketing Spend_
-- _State_
+- R&D Spend   (Continuous)
+- Administration  (Continuous)
+- Marketing Spend (Continuous)
+- State   (Categorical)
 
 Dependent Variables: 1
-- _Profit_
+- Profit  (Continuous)
 
 
 ## Code
