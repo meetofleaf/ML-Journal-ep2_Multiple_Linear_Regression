@@ -1,4 +1,4 @@
-![Banner](.banner.png)
+![Banner](.media/banner.png)
 # ML Journal - Machine Learning Fundamentals Series
 In this series of repositories, we'll explore various models, documenting the code and thought process behind each one.  The goal is to create a journal-like experience for both myself and anyone following along. By sharing the journey, we can:
 
@@ -14,6 +14,8 @@ This repository is the second addition to the 'ML Journal' series aimed at revis
 Compared to the previous linear regression model, we have multiple independent variables and sometimes it is necessary to select the best variables to get the most optimal and accurate model. This process of selection is called feature selection. There are variety of feature selection methods but for the purpose of multiple regression, stepwise selection is the most common method. Our ML library, sklearn, uses backward elimination method which is a type of stepwise feature selection method and it does so automatically but if you want to learn more about stepwise feature selection then visit [Dataaspirant](https://dataaspirant.com/stepwise-regression/).
 
 Covering all feature selection methods is out of scope of this repository. So, to learn more about feature selection from a broader perspective then visit [neptune.ai](https://neptune.ai/blog/feature-selection-methods).
+
+#### [Concept explanation](https://github.com/meetofleaf/ML-Journal-ep1_Linear_Regression/blob/main/multiple_linear_regression_explanation.md)
 
 
 ## Data
