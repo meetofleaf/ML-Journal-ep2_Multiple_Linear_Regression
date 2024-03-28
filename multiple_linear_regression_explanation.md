@@ -1,3 +1,4 @@
+![Banner](.media/banner.png)
 # What is Multiple Linear Regression?
 Today we're venturing into the world of multiple linear regression, a powerful tool for uncovering relationships between several independent variables and one dependent variable. In this case, we're aiming to predict a company's Profit based on factors like R&D Spend, Administration, and Marketing Spend.
 
