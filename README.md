@@ -15,7 +15,7 @@ Compared to the previous linear regression model, we have multiple independent v
 
 Covering all feature selection methods is out of scope of this repository. So, to learn more about feature selection from a broader perspective then visit [neptune.ai](https://neptune.ai/blog/feature-selection-methods).
 
-#### [Concept explanation](https://github.com/meetofleaf/ML-Journal-ep1_Linear_Regression/blob/main/multiple_linear_regression_explanation.md)
+#### [Concept explanation](https://github.com/meetofleaf/ML-Journal-ep2_Multiple_Linear_Regression/blob/main/multiple_linear_regression_explanation.md)
 
 
 ## Data
