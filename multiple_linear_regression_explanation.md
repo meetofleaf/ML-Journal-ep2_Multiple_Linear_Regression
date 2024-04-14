@@ -1,8 +1,14 @@
 ![Banner](.media/banner.png)
 # What is Multiple Linear Regression?
-Today we're venturing into the world of multiple linear regression, a powerful tool for uncovering relationships between several independent variables and one dependent variable. In this case, we're aiming to predict a company's Profit based on factors like R&D Spend, Administration, and Marketing Spend.
+Today we're venturing into the world of multiple linear regression, a powerful tool for uncovering relationships between several independent variables and one dependent variable. Multiple linear regression extends simple linear regression to incorporate more than one independent variable. The extension enables the model to consider the collective influence of various factors on the dependent variable, offering a more comprehensive analysis that uncovers relationships between several independent variables and one dependent variable
 
-You have data for 50 companies, including their spending on research and development (R&D), administration, and marketing, along with their profits.  Multiple linear regression helps you find a model that best explains how these spending factors influence the profit.
+From a graphical stand-point, Simple Linear Regression attempts to fit a line (a 2-dimensional object), to data points defined by the independent variable and a dependent variable. Multiple Linear Regression attempts to fit a higher dimensional object (the “relationship”) to data points defined by multiple independent variables and a dependent variable. This higher dimensional object then helps predict the value of the dependent variable when provided with the independent variables.
+
+### Case in point
+
+The data provided is that of 50 companies, including their spending on research and development (R&D), administration, and marketing, along with their profits. Multiple linear regression helps you find a model that best explains how these spending factors influence the profit.
+
+Ultimately, we aim to predict a company's Profit (one dependent variable), based on 5 given factors (multiple independent variables) like R&D Spend, Administration, Marketing Spend, and State.
 
 ## Key Players
 - **Dependent Variable (Y):** The variable you're trying to predict (Profit).
