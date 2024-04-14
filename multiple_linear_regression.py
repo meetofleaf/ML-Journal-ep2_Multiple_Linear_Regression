@@ -1,3 +1,5 @@
+# Multiple Linear Regression
+
 ### Import libraries
 import numpy as np
 import pandas as pd
@@ -49,5 +51,4 @@ print(np.concatenate((y_pred.reshape(len(y_pred),1), y_test.reshape(len(y_test),
 
 ### If you were able to run till here successfully, then machine learning part is complete.
 
-# Now, we can't visualize the data as we 1 dimension per variable,
 # we have 5 variables so it's not possible to visualize and perceive 5 dimensional charts so we just utilize the predict output above to compare actual and predicted values.
